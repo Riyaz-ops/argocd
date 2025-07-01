@@ -2,16 +2,16 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name = mydeploy
+  name: mydeploy
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app=swiggy
+      app: swiggy
   template:
     metadata:
       labels:
-        app=swiggy
+        app: swiggy
     spec:
       containers:
         - name: cont-1
